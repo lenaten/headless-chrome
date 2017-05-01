@@ -1,5 +1,9 @@
 # Headless Chrome Docker Image
 
+```
+$ docker pull lenaten/headless-chrome
+```
+
 ## Build
 ```
 $ docker build -t chrome .
