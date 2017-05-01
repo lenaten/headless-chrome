@@ -1,17 +1,20 @@
 # Headless Chrome Docker Image
 
+## Pull or Build
+
+### pull
 ```
 $ docker pull lenaten/headless-chrome
 ```
 
-## Build
+### build
 ```
-$ docker build -t chrome .
+$ docker build -t lenaten/headless-chrome .
 ```
 
 ## Run
 ```
-$ docker run -d -p 9222:9222 --privileged chrome --headless --disable-gpu --remote-debugging-port=9222 --remote-debugging-address=0.0.0.0 https://www.google.com
+$ docker run -d -p 9222:9222 --privileged lenaten/headless-chrome --headless --disable-gpu --remote-debugging-port=9222 --remote-debugging-address=0.0.0.0 https://www.google.com
 ```
 
 ## Connect
